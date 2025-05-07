@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="markiewiczl" translate="label" sortOrder="100">
+            <label>MarkiewiczL</label>
+        </tab>
+        <section id="markiewiczl_order_processor_config" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Order Proccessor</label>
+            <tab>markiewiczl</tab>
+            <resource>Markiewiczl_OrderProcessor::config</resource>
+            <group id="general_settings" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="is_enabled_order_processing" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is Enabled Order Processing</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable/disable publishing order data to queue</comment>
+                </field>
+                <field id="comment_text" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Comment Text</label>
+                    <comment>Text saved in order comment section while message consumption</comment>
+                    <validate>validate-length minimum-length-2 maximum-length-255</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
