@@ -28,4 +28,9 @@
             <argument name="logger" xsi:type="object">Markiewiczl\OrderProcessor\Model\Logger\Logger</argument>
         </arguments>
     </type>
+    <type name="Markiewiczl\OrderProcessor\Model\Queue\Handler\OrderProcessorHandler">
+        <arguments>
+            <argument name="logger" xsi:type="object">Markiewiczl\OrderProcessor\Model\Logger\Logger</argument>
+        </arguments>
+    </type>
 </config>
