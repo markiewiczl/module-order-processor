@@ -1,16 +1,14 @@
 {
     "name": "markiewiczl/module-order-processor",
     "version": "1.0.0",
-    "description": "Magento 2 module that adds a comment to order asynchronously via queue after it's placed.",
+    "description": "Magento 2 module that adds a comment to an order asynchronously via a queue after it's placed.",
     "type": "magento2-module",
     "require": {
         "magento/framework": "*",
         "magento/module-store": "*",
         "magento/module-sales": "*"
     },
-    "license": [
-        "Proprietary"
-    ],
+    "license": "MIT",
     "autoload": {
         "files": [
             "registration.php"
@@ -18,5 +16,12 @@
         "psr-4": {
             "Markiewiczl\\OrderProcessor\\": ""
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your.email@example.com"
+        }
+    ]
 }
