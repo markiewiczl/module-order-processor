@@ -4,7 +4,9 @@
     "description": "Magento 2 module that adds a comment to order asynchronously via queue after it's placed.",
     "type": "magento2-module",
     "require": {
-        "magento/framework": "*"
+        "magento/framework": "*",
+        "magento/module-store": "*",
+        "magento/module-sales": "*"
     },
     "license": [
         "Proprietary"
